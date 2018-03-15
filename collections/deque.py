@@ -8,6 +8,10 @@ q.append(3)
 q.appendleft(4)
 print(q)    #输出deque([4, 1, 2, 3])
 
+q.pop()
+q.popleft()
+print(q)    #输出deque([1, 2])
+
 #单向队列，一个方向拿
 #线程安全
 import queue
@@ -15,8 +19,8 @@ q=queue.Queue(10) #创建队列，指定最多放10个数据
 q.put(1)    #进
 q.put(2)
 q.put(3)
-print(q.get())   #取
-print(q.get())
+print(q.get())   #取 1
+print(q.get())   #取 2
 '''
 队列和栈的结构:
     队列：先进先出

@@ -33,3 +33,4 @@ print(list(zipped))
 x2, y2 = zip(*zip(x, y))
 if x == list(x2) and y == list(y2):
     print('equal')
+#equal
